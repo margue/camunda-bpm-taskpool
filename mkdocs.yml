@@ -5,12 +5,12 @@
 # install python3
 # install pip3
 # pip3 install mkdocs
-# pip3 install mkdocs-bootstrap4
 # pip3 install mkdocs-git-committers-plugin
 # pip3 install mkdocs-material
+# pip3 install mike
 #
 # To run:
-# mkdocs serve
+# mike serve
 # ###############################
 
 site_name: Polyflow
@@ -87,7 +87,7 @@ plugins:
   - mike:
       # these fields are all optional; the defaults are as below...
       version_selector: true   # set to false to leave out the version selector
-      css_dir: css             # the directory to put the version selector's CSS
+      css_dir: stylesheets             # the directory to put the version selector's CSS
       javascript_dir: js       # the directory to put the version selector's JS
       canonical_version: null  # the version for <link rel="canonical">; `null`
                                # uses the version specified via `mike deploy`
